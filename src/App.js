@@ -1,18 +1,14 @@
 import './App.css';
-import ResetButton from './components/ResetButton';
-import StopButton from './components/StopButton';
-import StartButton from './components/StartButton';
 import Chrono from './components/Chrono';
+import './index.css'
 
 function App() {
   return (
-    <div className="m-[auto] App w-[300px] border-4 h-[300px]">
+    <div className=" font-serif m-[auto] pt-[40px] App w-[300px] border-4 h-[300px]">
       React Chrono
       <Chrono />
-      <div>
-        <StartButton />
-        <StopButton />
-        <ResetButton />
+      <div className='flex items-center justify-around mt-[40px]'>
+
       </div>
     </div>
   );
