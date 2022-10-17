@@ -1,5 +1,11 @@
 function StartButton() {
-  return (  );
+
+
+  return (
+    <div>
+      Start
+    </div>
+  );
 }
 
 export default StartButton;

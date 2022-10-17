@@ -1,5 +1,7 @@
 function StopButton() {
-  return (  );
+  return (
+    <div></div>
+  );
 }
 
 export default StopButton;

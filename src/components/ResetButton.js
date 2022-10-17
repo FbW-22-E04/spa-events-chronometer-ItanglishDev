@@ -1,5 +1,7 @@
 function ResetButton() {
-  return (  );
+  return (
+    <div></div>
+  );
 }
 
 export default ResetButton;
