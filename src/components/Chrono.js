@@ -10,12 +10,27 @@ function Chrono() {
   const [milliSeconds, setMilliSeconds] = useState(0)
 
   // const start = () => {
+  function start() {
+
+    // useEffect(() => {
+    setInterval(() => {
+      setMinutes(minutes + 1)
+
+    }, 60000)
+    setInterval(() => {
+      setSeconds(seconds + 1)
+    }, 1000)
+
+    setInterval(() => {
+      setMilliSeconds(milliSeconds + 99)
+    }, 10)
+    // }, [])
+  }
 
   function stop() {
     console.log('CLICKED');
 
-    clearInterval()
-    clearInterval()
+
     clearInterval()
   }
   // }
@@ -33,7 +48,7 @@ function Chrono() {
         {`${minutes} : ${seconds} : ${milliSeconds * 100}`
         }
       </div>
-      <div className='space-around items-stretch'>
+      <div onClick={start} className='space-around items-stretch'>
         <button className='bg-cyan-400 h-[35px] border-2 border-slate-600 w-[75px] bg-sky'>
           Start</button>
         <button onClick={stop} className='border-2 bg-lime-200 border-slate-600 h-[35px] bg-orange-300 w-[75px] bg-sky'>
