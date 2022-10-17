@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react'
 
-
 function Chrono() {
-
-
 
   const [minutes, setMinutes] = useState((0))
   const [seconds, setSeconds] = useState(0)
@@ -45,7 +42,7 @@ function Chrono() {
   return (
     <>
       <div className='border-2 h-[45px] text-2xl'>
-        {`${minutes} : ${seconds} : ${milliSeconds * 100}`
+        {`${minutes} : ${seconds} : ${milliSeconds}`
         }
       </div>
       <div onClick={start} className='space-around items-stretch'>
